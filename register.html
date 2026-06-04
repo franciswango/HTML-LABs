@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenfield Community Library - Membership Registration</title>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="books.html">Browse Books</a> |
+    <a href="register.html">Membership Registration</a>
+  </nav>
+
+  <hr>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Membership Registration</h1>
+    <p>Join the Greenfield Community Library &mdash; <strong>completely free!</strong></p>
+    <p>Fill in the form below to create your library membership. Fields marked with <strong>*</strong> are required.</p>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <!-- Benefits Section -->
+    <section>
+      <h2>Why Become a Member?</h2>
+      <ul>
+        <li>Borrow up to <strong>5 books</strong> at a time for <strong>14 days</strong> each.</li>
+        <li>Access to free Wi-Fi within the library premises.</li>
+        <li>Receive newsletters with new arrivals and library events.</li>
+        <li>Reserve books in advance from our catalogue.</li>
+        <li>Access to our children&apos;s reading programmes and workshops.</li>
+        <li>Use of private study rooms (booking required).</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+
+      <form action="#" method="post">
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <p>
+            <label for="fullname">Full Name *</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Wanjiku Kamau" required size="40">
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth *</label><br>
+            <input type="date" id="dob" name="dob" required>
+          </p>
+
+          <p>
+            <label for="id_number">National ID / Passport Number *</label><br>
+            <input type="text" id="id_number" name="id_number" placeholder="e.g. 12345678" required size="30">
+          </p>
+
+          <p>Gender *<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            &nbsp;
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            &nbsp;
+            <input type="radio" id="prefer_not" name="gender" value="prefer_not_to_say">
+            <label for="prefer_not">Prefer not to say</label>
+          </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Contact Details -->
+        <fieldset>
+          <legend>Contact Details</legend>
+
+          <p>
+            <label for="email">Email Address *</label><br>
+            <input type="email" id="email" name="email" placeholder="e.g. jane@email.com" required size="40">
+          </p>
+
+          <p>
+            <label for="phone">Phone Number *</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +254 712 345 678" required size="30">
+          </p>
+
+          <p>
+            <label for="address">Residential Address</label><br>
+            <textarea id="address" name="address" rows="3" cols="45" placeholder="Enter your home address here..."></textarea>
+          </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Membership Preferences -->
+        <fieldset>
+          <legend>Membership Preferences</legend>
+
+          <p>
+            <label for="member_type">Membership Type *</label><br>
+            <select id="member_type" name="member_type" required>
+              <option value="">-- Select a type --</option>
+              <option value="individual">Individual (Adult 18+)</option>
+              <option value="student">Student</option>
+              <option value="child">Child (Under 18 &mdash; requires guardian)</option>
+              <option value="senior">Senior Citizen (60+)</option>
+              <option value="family">Family Membership</option>
+            </select>
+          </p>
+
+          <p>Interests (select all that apply):<br>
+            <input type="checkbox" id="fiction" name="interests" value="fiction">
+            <label for="fiction">Fiction</label><br>
+
+            <input type="checkbox" id="nonfiction" name="interests" value="nonfiction">
+            <label for="nonfiction">Non-Fiction</label><br>
+
+            <input type="checkbox" id="science" name="interests" value="science">
+            <label for="science">Science &amp; Technology</label><br>
+
+            <input type="checkbox" id="history" name="interests" value="history">
+            <label for="history">History &amp; Biography</label><br>
+
+            <input type="checkbox" id="children" name="interests" value="children">
+            <label for="children">Children&apos;s Books</label><br>
+
+            <input type="checkbox" id="magazines" name="interests" value="magazines">
+            <label for="magazines">Magazines &amp; Periodicals</label>
+          </p>
+
+          <p>
+            <label for="newsletter">Would you like to receive our monthly newsletter?</label><br>
+            <select id="newsletter" name="newsletter">
+              <option value="yes">Yes, please send me updates</option>
+              <option value="no">No, thank you</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="hear_about">How did you hear about us?</label><br>
+            <input type="text" id="hear_about" name="hear_about" placeholder="e.g. Friend, social media, school..." size="40">
+          </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Account Setup -->
+        <fieldset>
+          <legend>Set Up Your Library Account</legend>
+
+          <p>
+            <label for="username">Choose a Username *</label><br>
+            <input type="text" id="username" name="username" placeholder="e.g. janereads2026" required size="30" minlength="5" maxlength="20">
+          </p>
+
+          <p>
+            <label for="password">Create a Password *</label><br>
+            <input type="password" id="password" name="password" required size="30" minlength="8">
+            <br><small>Minimum 8 characters.</small>
+          </p>
+
+          <p>
+            <label for="confirm_password">Confirm Password *</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required size="30">
+          </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Terms and Conditions -->
+        <fieldset>
+          <legend>Agreement</legend>
+
+          <p>Please read and accept the following before submitting:</p>
+
+          <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+              I agree to abide by the <strong>Greenfield Community Library Rules and Borrowing Policy</strong>
+              as listed on the <a href="books.html">Browse Books</a> page. *
+            </label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="age_confirm" name="age_confirm" required>
+            <label for="age_confirm">
+              I confirm that the information provided above is accurate and truthful. *
+            </label>
+          </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Form Buttons -->
+        <p>
+          <input type="submit" value="Submit Registration">
+          &nbsp;&nbsp;
+          <input type="reset" value="Clear Form">
+        </p>
+
+      </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Additional Info -->
+    <section>
+      <h2>What Happens After You Register?</h2>
+      <ol>
+        <li>Your application will be reviewed within <strong>1&ndash;2 business days</strong>.</li>
+        <li>You will receive a confirmation email at the address you provided.</li>
+        <li>Visit the library with a valid ID to collect your <strong>membership card</strong>.</li>
+        <li>You may begin borrowing books immediately upon receiving your card!</li>
+      </ol>
+
+      <p>
+        For any queries, return to our <a href="index.html">Home page</a> for contact details,
+        or explore our <a href="books.html">Book Collection</a> while you wait.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Note for Minors -->
+    <section>
+      <h2>Note for Children &amp; Students Under 18</h2>
+      <p>
+        If registering a child under the age of 18, a parent or guardian must accompany the child
+        to the library to co-sign the membership agreement. The child&apos;s membership will be
+        linked to the guardian&apos;s account for borrowing supervision.
+      </p>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <address>
+      <strong>Greenfield Community Library</strong><br>
+      14 Booklover&apos;s Lane, Greenfield Town<br>
+      Tel: +254 700 123 456<br>
+      Email: <a href="mailto:info@greenfieldlibrary.org">info@greenfieldlibrary.org</a>
+    </address>
+    <p><small>&copy; 2026 Greenfield Community Library. All rights reserved.</small></p>
+  </footer>
+
+</body>
+
+</html>
